@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Valor de A -->
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="255dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="60dp"
+        android:hint="Ingresa el valor de a"
+        android:inputType="numberDecimal|numberSigned"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Valor de B -->
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="255dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="25dp"
+        android:hint="Ingresa el valor de b"
+        android:inputType="numberDecimal|numberSigned"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextText4" />
+
+    <!-- Valor de C -->
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="255dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="25dp"
+        android:hint="Ingresa el valor de c"
+        android:inputType="numberDecimal|numberSigned"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextText2" />
+
+    <!-- Botón Calcular -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:text="CALCULAR"
+        app:layout_constraintEnd_toStartOf="@id/button2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextText5" />
+
+    <!-- Botón Limpiar -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="35dp"
+        android:text="LIMPIAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button"
+        app:layout_constraintTop_toBottomOf="@id/editTextText5" />
+
+    <!-- Resultado X1 -->
+    <TextView
+        android:id="@+id/txtX1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:text="x₁ ="
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+    <!-- Resultado X2 -->
+    <TextView
+        android:id="@+id/txtX2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="x₂ ="
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtX1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
